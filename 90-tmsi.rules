@@ -3,4 +3,3 @@ ACTION=="add", KERNEL=="tmsi*", ATTRS{idVendor}=="0c7c", ATTRS{idProduct}=="0005
 ACTION=="add", ATTRS{idVendor}=="0c7c", ATTRS{idProduct}=="0003", RUN+="/sbin/fxload -t fx2 -I /lib/firmware/fusbi.hex -D $env{DEVNAME}"
 KERNEL=="tmsi*",ATTRS{idVendor}=="0c7c", ATTRS{idProduct}=="0004", SYMLINK+="fusbi%n"
 
-

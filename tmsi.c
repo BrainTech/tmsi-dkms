@@ -11,24 +11,31 @@
  *          
  * ChangeLog
  * ---------
+ *
  * v1.8 - 02-12-2014 Maciej Pawlisz
-                * Stabilization of SYNFI device
+ *
+ *      * Stabilization of SYNFI device
+ *
  * v1.8 - 13-01-2013 Maciej Pawlisz
- *              * err() replaced by pr_err()
+ *
+ *      * err() replaced by pr_err()
+ *
  * v1.7 - 02-06-2012 Maciej Pawlisz
+ *
  * 		* PACKET_BUFFER_SIZE changed to 2MB
  * 		+ Support for unlocked_ioctl
  *
  * v1.6 - 21-10-2011 Maciej Pawlisz
+ *
  *      + Support kernel 3.0
  *      + Sending front_end_info with stop request on release
  *      * Allocating/deallocation urbs moved to open/release
  *       
  * v1.5 - 16-07-2011 Maciej Pawlisz
+ *
  *      * Name change to Tmsi driver
  *      * usb_kill_urb instead of usb_unlink_urb in release 
  *      + Support for SynFi device
- *
  *
  * v1.4 - 01-09-2010
  *      + Support for kernel 2.6.32 by Maciej Pawlisz (maciej.pawlisz@gmail.com)
@@ -39,12 +46,10 @@
  *      * Fixed compiler warnings on usb_fill_bulk_urb calls
  *      + Support for kernel 2.6.24
  *
- *
  * v1.2 - 26-06-2007
  *
  *      + x86_64 architecture IOCTL command added
  *      * unlink_urb instead of kill_urb in callback handlers
- *
  *
  * v1.1 - 05-01-2007
  *
@@ -742,8 +747,8 @@ static void __exit usb_tmsi_exit(void) {
     usb_deregister(&tmsi_driver);
 }
 
-
 module_init(usb_tmsi_init);
 module_exit(usb_tmsi_exit);
 
 MODULE_LICENSE("GPL");
+
